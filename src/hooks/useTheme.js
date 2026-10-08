@@ -1,0 +1,16 @@
+import { useEffect, useState } from 'react'
+
+export default function useTheme() {
+  const [dark, setDark] = useState(() => document.documentElement.classList.contains('dark'))
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', dark)
+    try {
+      localStorage.setItem('theme', dark ? 'dark' : 'light')
+    } catch {
+      // storage unavailable — theme just won't persist
+    }
+  }, [dark])
+
+  return [dark, () => setDark((d) => !d)]
+}
