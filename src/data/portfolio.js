@@ -64,12 +64,10 @@ export const coursework = [
   'CS50P: Introduction to Programming with Python (Harvard)',
 ]
 
-// category drives the filter tabs (they appear automatically once 2+ categories exist).
 // image: path under public/, e.g. '/projects/rag-assistant.png'
 export const projects = [
   {
     title: 'Evaluation-Driven RAG Assistant over FastAPI Docs',
-    category: 'GenAI',
     stack: ['Python', 'FastAPI', 'BGE', 'ChromaDB', 'BM25', 'Groq'],
     metrics: ['95% retrieval hit-rate', '4.95/5 faithfulness', '100% citation validity'],
     bullets: [
@@ -84,7 +82,6 @@ export const projects = [
   },
   {
     title: 'Autonomous Coding Agent with Sandboxed Execution',
-    category: 'GenAI',
     stack: ['Python', 'Groq API', 'Docker', 'SQLite', 'pytest'],
     metrics: ['60% → 100% review-ready', '15-task benchmark', 'Human approval gate'],
     bullets: [
@@ -98,8 +95,7 @@ export const projects = [
     live: '',
   },
   {
-    title: 'MindCare — Full-Stack AI Support Assistant',
-    category: 'Full-Stack',
+    title: 'MindCare — AI Support Assistant',
     stack: ['React', 'Vite', 'FastAPI', 'Pinecone', 'MongoDB Atlas'],
     metrics: ['Long-term semantic memory', '384-dim embeddings', 'Vercel + Render'],
     bullets: [
@@ -112,7 +108,6 @@ export const projects = [
   },
   {
     title: 'Atlas — Multi-Document RAG Chatbot',
-    category: 'GenAI',
     stack: ['Python', 'FastAPI', 'Gemini API', 'TF-IDF'],
     metrics: ['PDF · DOCX · TXT · MD', 'Cited answers', 'Extractive fallback'],
     bullets: [

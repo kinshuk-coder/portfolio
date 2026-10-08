@@ -1,7 +1,7 @@
 import { FaArrowUpRightFromSquare, FaGithub } from 'react-icons/fa6'
 
 export default function ProjectCard({ project }) {
-  const { title, category, stack, metrics, bullets, image, github, live } = project
+  const { title, stack, metrics, bullets, image, github, live } = project
 
   return (
     <article className="group flex w-[86%] shrink-0 snap-start flex-col overflow-hidden rounded-3xl border border-line bg-surface shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:w-[440px] lg:w-[calc((100%-48px)/2.15)]">
@@ -16,9 +16,6 @@ export default function ProjectCard({ project }) {
         ) : (
           <Placeholder title={title} stack={stack} />
         )}
-        <span className="absolute top-4 left-4 rounded-full bg-surface/90 px-3 py-1 text-xs font-bold text-ink backdrop-blur">
-          {category}
-        </span>
       </div>
 
       <div className="flex flex-1 flex-col p-6">
