@@ -5,7 +5,7 @@ dist
 # Source files — the site uses the copies in public/
 *.docx
 ~$*
-/hero-image.jpeg
-/atlas-multi-rag-chatbot.png
-/fastapi-rag-docs.png
-/Mindcare.png
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
