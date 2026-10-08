@@ -28,7 +28,7 @@ export const experience = [
     location: 'Delhi (Remote)',
     period: 'Oct 2026 — Present',
     bullets: [
-      'Building an LLM agent that explores a large biomedical database and finds semantically related records.',
+      'Building an LLM agent that explores a large database and finds semantically related records.',
       'Adding observability and retrieval evals to prove the agent searches the data correctly, not just plausibly.',
     ],
     tags: ['LLM Agents', 'Retrieval Evals', 'Observability'],
